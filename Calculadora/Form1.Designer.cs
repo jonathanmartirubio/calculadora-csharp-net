@@ -58,11 +58,17 @@ namespace Calculadora
             // 
             // tbVentana
             // 
+            this.tbVentana.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tbVentana.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbVentana.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tbVentana.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVentana.Location = new System.Drawing.Point(12, 29);
             this.tbVentana.Multiline = true;
             this.tbVentana.Name = "tbVentana";
+            this.tbVentana.ReadOnly = true;
             this.tbVentana.Size = new System.Drawing.Size(356, 46);
             this.tbVentana.TabIndex = 0;
+            this.tbVentana.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // bResto
             // 
@@ -73,6 +79,7 @@ namespace Calculadora
             this.bResto.TabIndex = 1;
             this.bResto.Text = "%";
             this.bResto.UseVisualStyleBackColor = true;
+            this.bResto.Click += new System.EventHandler(this.bResto_Click);
             // 
             // bBorrar
             // 
@@ -83,6 +90,7 @@ namespace Calculadora
             this.bBorrar.TabIndex = 1;
             this.bBorrar.Text = "C";
             this.bBorrar.UseVisualStyleBackColor = true;
+            this.bBorrar.Click += new System.EventHandler(this.bBorrar_Click);
             // 
             // button4
             // 
@@ -103,6 +111,7 @@ namespace Calculadora
             this.b7.TabIndex = 1;
             this.b7.Text = "7";
             this.b7.UseVisualStyleBackColor = true;
+            this.b7.Click += new System.EventHandler(this.b7_Click);
             // 
             // b8
             // 
@@ -113,6 +122,7 @@ namespace Calculadora
             this.b8.TabIndex = 1;
             this.b8.Text = "8";
             this.b8.UseVisualStyleBackColor = true;
+            this.b8.Click += new System.EventHandler(this.b8_Click);
             // 
             // b9
             // 
@@ -123,6 +133,7 @@ namespace Calculadora
             this.b9.TabIndex = 1;
             this.b9.Text = "9";
             this.b9.UseVisualStyleBackColor = true;
+            this.b9.Click += new System.EventHandler(this.b9_Click);
             // 
             // bDividir
             // 
@@ -133,6 +144,7 @@ namespace Calculadora
             this.bDividir.TabIndex = 1;
             this.bDividir.Text = "/";
             this.bDividir.UseVisualStyleBackColor = true;
+            this.bDividir.Click += new System.EventHandler(this.bDividir_Click);
             // 
             // b4
             // 
@@ -143,6 +155,7 @@ namespace Calculadora
             this.b4.TabIndex = 1;
             this.b4.Text = "4";
             this.b4.UseVisualStyleBackColor = true;
+            this.b4.Click += new System.EventHandler(this.b4_Click);
             // 
             // b5
             // 
@@ -153,6 +166,7 @@ namespace Calculadora
             this.b5.TabIndex = 1;
             this.b5.Text = "5";
             this.b5.UseVisualStyleBackColor = true;
+            this.b5.Click += new System.EventHandler(this.b5_Click);
             // 
             // b6
             // 
@@ -163,6 +177,7 @@ namespace Calculadora
             this.b6.TabIndex = 1;
             this.b6.Text = "6";
             this.b6.UseVisualStyleBackColor = true;
+            this.b6.Click += new System.EventHandler(this.b6_Click);
             // 
             // bMultiplicar
             // 
@@ -173,6 +188,7 @@ namespace Calculadora
             this.bMultiplicar.TabIndex = 1;
             this.bMultiplicar.Text = "*";
             this.bMultiplicar.UseVisualStyleBackColor = true;
+            this.bMultiplicar.Click += new System.EventHandler(this.bMultiplicar_Click);
             // 
             // b1
             // 
@@ -183,6 +199,7 @@ namespace Calculadora
             this.b1.TabIndex = 1;
             this.b1.Text = "1";
             this.b1.UseVisualStyleBackColor = true;
+            this.b1.Click += new System.EventHandler(this.b1_Click);
             // 
             // b2
             // 
@@ -193,6 +210,7 @@ namespace Calculadora
             this.b2.TabIndex = 1;
             this.b2.Text = "2";
             this.b2.UseVisualStyleBackColor = true;
+            this.b2.Click += new System.EventHandler(this.b2_Click);
             // 
             // b3
             // 
@@ -203,6 +221,7 @@ namespace Calculadora
             this.b3.TabIndex = 1;
             this.b3.Text = "3";
             this.b3.UseVisualStyleBackColor = true;
+            this.b3.Click += new System.EventHandler(this.b3_Click);
             // 
             // bRestar
             // 
@@ -213,6 +232,7 @@ namespace Calculadora
             this.bRestar.TabIndex = 1;
             this.bRestar.Text = "-";
             this.bRestar.UseVisualStyleBackColor = true;
+            this.bRestar.Click += new System.EventHandler(this.bRestar_Click);
             // 
             // b0
             // 
@@ -223,6 +243,7 @@ namespace Calculadora
             this.b0.TabIndex = 1;
             this.b0.Text = "0";
             this.b0.UseVisualStyleBackColor = true;
+            this.b0.Click += new System.EventHandler(this.b0_Click);
             // 
             // bComa
             // 
@@ -231,8 +252,9 @@ namespace Calculadora
             this.bComa.Name = "bComa";
             this.bComa.Size = new System.Drawing.Size(67, 53);
             this.bComa.TabIndex = 1;
-            this.bComa.Text = ".";
+            this.bComa.Text = ",";
             this.bComa.UseVisualStyleBackColor = true;
+            this.bComa.Click += new System.EventHandler(this.bComa_Click);
             // 
             // bResultado
             // 
@@ -243,6 +265,7 @@ namespace Calculadora
             this.bResultado.TabIndex = 1;
             this.bResultado.Text = "=";
             this.bResultado.UseVisualStyleBackColor = true;
+            this.bResultado.Click += new System.EventHandler(this.bResultado_Click);
             // 
             // bCambiarSigno
             // 
@@ -273,6 +296,7 @@ namespace Calculadora
             this.bSumar.TabIndex = 1;
             this.bSumar.Text = "+";
             this.bSumar.UseVisualStyleBackColor = true;
+            this.bSumar.Click += new System.EventHandler(this.bSumar_Click);
             // 
             // bAlCuadrado
             // 
@@ -283,6 +307,7 @@ namespace Calculadora
             this.bAlCuadrado.TabIndex = 1;
             this.bAlCuadrado.Text = "X²";
             this.bAlCuadrado.UseVisualStyleBackColor = true;
+            this.bAlCuadrado.Click += new System.EventHandler(this.bAlCuadrado_Click);
             // 
             // bRaiz
             // 
@@ -293,6 +318,7 @@ namespace Calculadora
             this.bRaiz.TabIndex = 1;
             this.bRaiz.Text = "√";
             this.bRaiz.UseVisualStyleBackColor = true;
+            this.bRaiz.Click += new System.EventHandler(this.bRaiz_Click);
             // 
             // Form1
             // 
@@ -327,7 +353,7 @@ namespace Calculadora
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Calculadora";
+            this.Text = " Calculadora";
             this.ResumeLayout(false);
             this.PerformLayout();
 
